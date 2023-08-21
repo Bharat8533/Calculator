@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enjoy  Calculator ! B-Production</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+</head>
+<body>
+    <div class="container">
+        <h1>B-Production</h1>
+        <div class="calculator">
+            <input type="text" class="displayinput" id="display">
+            <div class="numbers">
+                <div>
+                    <input type="button" value="AC" class="btn1" onclick="document.getElementById('display').value = ' '" >
+                    <input type="button" value="DEL" class="btn1" onclick="document.getElementById('display').value = document.getElementById('display').value.slice(0, -1)">
+                    <input type="button" value="%" class="btn1" onclick="document.getElementById('display').value += '%'">
+                    <input type="button" value="/" class="btn2" onclick="document.getElementById('display').value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="document.getElementById('display').value += '7'">
+                    <input type="button" value="8" onclick="document.getElementById('display').value += '8'">
+                    <input type="button" value="9" onclick="document.getElementById('display').value += '9'">
+                    <input type="button" value="X"  class="btn2" onclick="document.getElementById('display').value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="document.getElementById('display').value += '4'">
+                    <input type="button" value="5" onclick="document.getElementById('display').value += '5'">
+                    <input type="button" value="6" onclick="document.getElementById('display').value += '6'">
+                    <input type="button" value="-"  class="btn2" onclick="document.getElementById('display').value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="document.getElementById('display').value += '1'">
+                    <input type="button" value="2" onclick="document.getElementById('display').value += '2'">
+                    <input type="button" value="3" onclick="document.getElementById('display').value += '3'">
+                    <input type="button" value="+"  class="btn2" onclick="document.getElementById('display').value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="document.getElementById('display').value += '0'">
+                    <input type="button" value="." onclick="document.getElementById('display').value += '.'">
+                    <input type="button" value="="  class="btn2" id="equalbtn" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
